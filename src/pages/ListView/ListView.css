@@ -1,0 +1,26 @@
+.list-view {
+	/* display: grid ; */
+	display: grid;
+	background: white;
+	/* max-width: 700px; */
+	padding: 30px;
+	box-shadow: 0px 1px 0px #e8e8e8;
+	border-radius: 15px;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px 10px;
+	gap: 10px;
+}
+.tag {
+	background-color: #876f6f;
+	color: white;
+	border-radius: 5px;
+	padding: 5px;
+	cursor: pointer;
+}
+.tag:hover {
+	background-color: #d3c9c9;
+}

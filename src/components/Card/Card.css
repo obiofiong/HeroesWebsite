@@ -1,0 +1,149 @@
+.card {
+	position: relative;
+	max-width: 600px;
+	height: 200px;
+	box-shadow: 3px 3px 18px 1px #e2e2e2;
+	border-radius: 10px;
+	background: white;
+	margin: 1em 0;
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	gap: 30px;
+
+	color: #3503ff;
+	-webkit-transition: height 0.3s ease-in-out;
+	-moz-transition: height 0.3s ease-in-out;
+	transition: height 0.3s ease-in-out;
+
+	overflow: hidden;
+}
+.card-expanded {
+	height: 400px;
+	-webkit-transition: height 0.3s ease-in-out;
+	-moz-transition: height 0.3s ease-in-out;
+	transition: height 0.3s ease-in-out;
+}
+.card .image {
+	height: 100%;
+	overflow: hidden;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.card img {
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+	width: 240px;
+	height: 400px;
+	margin-top: -50px;
+	-webkit-transition: margin 0.3s ease-in-out;
+	-moz-transition: margin 0.3s ease-in-out;
+	transition: margin 0.3s ease-in-out;
+}
+.card-expanded img {
+	margin-top: 0px;
+	-webkit-transition: margin 0.3s ease-in-out;
+	-moz-transition: margin 0.3s ease-in-out;
+	transition: margin 0.3s ease-in-out;
+}
+.card .hero-name {
+	font-weight: 800;
+	font-size: 25px;
+}
+.card p {
+	font-size: 14px;
+	font-weight: 400;
+}
+.card .expand-icon {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	top: 10px;
+	right: 20px;
+	border-radius: 50%;
+	/* box-shadow: 3px 3px 18px 1px #e2e2e2; */
+	/* padding: 5px; */
+	color: gray;
+	background-color: #ffffff;
+	font-size: 20px;
+	/* font-weight: 500; */
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	cursor: pointer;
+	border: 0.5px solid #d4d4d4;
+}
+.hero-details {
+	/* overflow: hidden; */
+	margin-top: 250px;
+	-webkit-transition: margin-top 0.3s ease-in-out;
+	-moz-transition: margin-top 0.3s ease-in-out;
+	transition: margin-top 0.3s ease-in-out;
+}
+.hero-details-active {
+	margin-top: 0;
+	-webkit-transition: margin-top 0.3s ease-in-out;
+	-moz-transition: margin-top 0.3s ease-in-out;
+	transition: margin-top 0.3s ease-in-out;
+}
+.powers {
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+	transition-delay: 0.3s;
+}
+powers-active {
+	opacity: 1;
+	transition: opacity 0.4s ease-in-out;
+	transition-delay: 0.3s;
+}
+.powers-heading {
+	font-weight: 700;
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+/* tag section */
+.tags-section {
+}
+.tag-input {
+	display: flex;
+	height: 40px;
+}
+.tag-input .btn {
+	background-color: #808080;
+	color: white;
+	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 5px;
+	width: 30%;
+}
+.tag-input .btn :hover {
+	background-color: #e1e1e1;
+}
+.tag-input input {
+	height: 100%;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: 1px solid #e5e5e5;
+	font-size: 18px;
+	padding: 0 0.4em;
+	width: 70%;
+}
+
+.tag-input input:focus {
+	outline: 1px solid #e2e2e2;
+}
+.tags-section .tags {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px 10px;
+	gap: 10px;
+}
+.tags-section .tag {
+	background-color: #808080;
+	color: white;
+	border-radius: 5px;
+	padding: 5px;
+}
